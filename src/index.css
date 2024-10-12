@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.glassmorphic {
+  @apply bg-white bg-opacity-20 backdrop-blur-md;
+}
+
+.dark .glassmorphic {
+  @apply bg-gray-900 bg-opacity-20;
+}
